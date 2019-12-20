@@ -17,7 +17,7 @@ sidebar_label: Pod Network Corruption
 - Ensure that the `pod-network-corruption` experiment resource is available in the cluster. If not, install from [here](https://hub.litmuschaos.io/charts/generic/experiments/pod-network-corruption)
 - <div class="danger">
     <strong>NOTE</strong>: 
-        If on minikube, it must be version >=1.6. 
+        If on minikube, it must be version >=1.6.</br> 
         Experiment is supported only on Docker Runtime. Support for containerd/CRIO runtimes will be added in subsequent releases.
 </div>
 
