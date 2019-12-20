@@ -17,7 +17,6 @@ sidebar_label: Pod Network Corruption
 - Ensure that the `pod-network-corruption` experiment resource is available in the cluster. If not, install from [here](https://hub.litmuschaos.io/charts/generic/experiments/pod-network-corruption)
 - <div class="danger">
     <strong>NOTE</strong>: 
-        If on minikube, it must be version >=1.6.</br> 
         Experiment is supported only on Docker Runtime. Support for containerd/CRIO runtimes will be added in subsequent releases.
 </div>
 
@@ -58,7 +57,7 @@ sidebar_label: Pod Network Corruption
 | LIB                   | The chaos lib used to inject the chaos                       | Optional  | Default: pumba   |
 | LIB_IMAGE             | The docker image to be used from the LIB                     | Optional  | Default: gaiaadm/pumba:0.6.5; note: versions < 0.6 are not supported! |
 | CHAOSENGINE           | ChaosEngine name associated with the experiment instance     | Optional  |                  |
-| CHAOS_SERVICE_ACCOUNT | Service account used by the pumba daemonset                  | Optional  | Optional         |
+| CHAOS_SERVICE_ACCOUNT | Service account used by the LIB                              | Optional  |                  |
 
 #### Sample ChaosEngine Manifest
 
